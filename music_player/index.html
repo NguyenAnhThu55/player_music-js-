@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- link font -->
+    <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"  crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="player">
+        <!-- dashboard: bảng điều khiển -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing</h4>
+                <h2>Love Start</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb">
+                    
+                </div>
+            </div>
+
+            <!-- contronl -->
+            <div class="control">
+                <!-- buttun repeat -->
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+
+                <!-- buttun prev -->
+                <div class="btn btn-prev">
+                    <i class="fas fa-fast-backward"></i>
+                </div>
+
+                <!-- buttun play -->
+                <div class="btn btn-play ">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i class="fas fa-play icon-play"></i>
+
+                </div>
+
+                <!-- buttun next -->
+                <div class="btn btn-next">
+                    <i class="fas fa-fast-forward"></i>
+                </div>
+
+                <!-- buttun radom -->
+                <div class="btn btn-radom">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+            <!-- loading mucis -->
+            <input  id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+    
+            <audio id="audio" src=""></audio>
+        </div>
+        <div class="playlist">
+                    
+        </div>
+    </div>
+    
+</body>
+<script src="assets/javascript/javascript.js"></script>
+</html>
